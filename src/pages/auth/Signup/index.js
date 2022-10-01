@@ -12,7 +12,7 @@ import styles from './signup.module.scss'
 
 const customTests = {
   ...tests,
-  fullName: {
+  name: {
     test: tests.name.test,
     error: 'Please input full name',
   },
@@ -26,7 +26,7 @@ const Signup = () => {
   // State
   // ------------------------------------
   const [input, setInput] = useState({
-    fullName: '',
+    name: '',
     email: '',
     password: '',
     confirmPassword: '',
@@ -80,11 +80,11 @@ const Signup = () => {
       <h2 className={styles.title}>Signup</h2>
       <Input
         label="Full Name"
-        name="fullName"
+        name="name"
         placeholder="John Doe"
-        value={input.fullName}
+        value={input.name}
         onChange={handleOnChange}
-        error={error.fullName}
+        error={error.name}
       />
       <Input
         label="Email"
