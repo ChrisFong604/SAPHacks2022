@@ -19,7 +19,7 @@ const FontIcon = ({ name, className, style }) => (
 FontIcon.propTypes = {
   name: PropTypes.string,
   className: PropTypes.string,
-  style: PropTypes.objectOf(PropTypes.object),
+  style: '',
 }
 
 FontIcon.defaultProps = {

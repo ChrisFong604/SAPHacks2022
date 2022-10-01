@@ -35,7 +35,7 @@ const Button = ({
 Button.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
-  style: PropTypes.objectOf(PropTypes.object),
+  style: '',
   children: PropTypes.node,
   onClick: PropTypes.func,
   disabled: PropTypes.bool,
