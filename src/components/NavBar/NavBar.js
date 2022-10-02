@@ -34,16 +34,16 @@ function NavBar(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/Workspaces/">Workspaces</NavLink>
+              <NavLink href="/app/workspaces/">Workspaces</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Workspaces/">Teams</NavLink>
+              <NavLink href="/app/teams/">Teams</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Workspaces/">Communities</NavLink>
+              <NavLink href="/app/communities">Communities</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/Workspaces/">Events</NavLink>
+              <NavLink href="/app/events">Events</NavLink>
             </NavItem>
             <UncontrolledDropdown right nav inNavbar>
               <DropdownToggle nav caret>
