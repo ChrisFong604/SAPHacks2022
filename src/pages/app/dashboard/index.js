@@ -6,11 +6,6 @@ const Dashboard = () => {
   const { me } = useSelector((state) => state.app)
   return (
     <div className={styles.root}>
-      <img
-        src="https://cdn.discordapp.com/attachments/1025178974290194492/1026154223253074011/Group_5.png"
-        className={styles.ImSoDoneWithItNavBar}
-        alt="team"
-      />
       <h2 className={styles.greeting}>{`Hey👋 ${me?.name || 'User\n'}!`}</h2>
 
       <div className={styles.flexboxContainer}>
