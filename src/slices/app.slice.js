@@ -64,6 +64,26 @@ export const authenticate = () => (dispatch) => {
   })
 }
 
+const createCommunity =
+  ({ community_name, community_description }) =>
+  () => {
+    new Promise(async (resolve, reject) => {
+      try {
+        const members = []
+
+        const community = await firestore.collection('communities').doc().set({
+          community_name,
+          community_description,
+          members,
+        })
+
+        resolve(community)
+      } catch (err) {
+        reject(err)
+      }
+    })
+  }
+
 const signup =
   ({ name, email, office, password }) =>
   () =>
