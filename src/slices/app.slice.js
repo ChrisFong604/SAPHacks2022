@@ -64,7 +64,7 @@ export const authenticate = () => (dispatch) => {
   })
 }
 
-const createCommunity =
+/* const createCommunity =
   ({ community_name, community_description }) =>
   () => {
     new Promise(async (resolve, reject) => {
@@ -82,7 +82,7 @@ const createCommunity =
         reject(err)
       }
     })
-  }
+  } */
 
 const signup =
   ({ name, email, office, password }) =>
