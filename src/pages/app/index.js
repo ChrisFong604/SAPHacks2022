@@ -3,6 +3,10 @@ import Dashboard from 'pages/app/dashboard'
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { path } from 'utils/const'
+import Communities from './communities'
+import Events from './events'
+import Teams from './teams'
+import Workspaces from './workspaces'
 // import styles from './app.module.scss'
 
 const App = () => (
@@ -14,16 +18,16 @@ const App = () => (
         <Dashboard />
       </Route>
       <Route path={path.workspaces}>
-        <p>workspaces</p>
+        <Workspaces />
       </Route>
       <Route path={path.communities}>
-        <p>communities</p>
+        <Communities />
       </Route>
       <Route path={path.events}>
-        <p>events</p>
+        <Events />
       </Route>
       <Route path={path.teams}>
-        <p>teams</p>
+        <Teams />
       </Route>
       <Redirect to={path.dashboard} />
     </Switch>
