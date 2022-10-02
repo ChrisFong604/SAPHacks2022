@@ -1,32 +1,20 @@
 .maingrid {
   display: grid;
-  grid-template-columns: auto;
+  max-width: 95vw !important;
+  column-gap: 12px;
+  row-gap: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
   font-weight: 700;
   font-size: 80px;
-  line-height: 97px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  margin-left: 235px;
-}
-
-.cardgrid {
-  display: grid;
-  place-content: center;
-  grid-template-columns: 1 1;
-  grid-template-rows: 1 2;
-}
-
-.cardright {
-  display: grid;
-  text-align: right;
+  place-items: center;
 }
 
 .box {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08), 0px 1px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08),
+    0px 1px 12px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 300px;
   height: 330px;
 }
