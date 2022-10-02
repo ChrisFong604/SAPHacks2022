@@ -2,7 +2,6 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Button from 'components/Button'
 import { actions } from 'slices/app.slice'
-import { images } from 'theme'
 import styles from './dashboard.module.scss'
 
 const Dashboard = () => {
@@ -10,35 +9,77 @@ const Dashboard = () => {
   const { me } = useSelector((state) => state.app)
   return (
     <div className={styles.root}>
-      <div className={styles.container}>
-        <img src={images.logo} className={styles.logo} alt="logo" />
-        <h3 className={styles.greeting}>{`Hi👋, ${me?.name || 'User\n'}`}</h3>
-        <h1 className={styles.title}>CoSync</h1>
-        <p className={styles.description}>
-          {'\n'}
-          Sync with like-minded communities at
-          <h4 color="white">
-            {`${me?.office || 'Somewhere in the Universe'}`}
-          </h4>
-          {'\n'}
-          or branch out to something new, with people there to support you!
-        </p>
+      <h2 className={styles.greeting}>{`Hey👋 ${me?.name || 'User\n'}!`}</h2>
 
-        <div className={styles.buttonContainer}>
-          <Button
-            label="Download for free"
-            className={`btn-purple-fill ${styles.download}`}
-            onClick={() => {
-              window.location.href =
-                'https://github.com/WataruMaeda/react-firebase-boilerplate'
-            }}
-          />
-          <Button
-            label="Logout"
-            className={`btn-purple-outline ${styles.logout}`}
-            onClick={() => dispatch(actions.logout())}
-          />
+      <div className={styles.flexboxContainer}>
+        <div className={styles.flexboxItem1}>
+          <h3 className={styles.introL}>Whats happening?</h3>
         </div>
+        <div className={styles.flexboxItem2}>
+          <h3 className={styles.introR}>Whos in?</h3>
+        </div>
+      </div>
+
+      <div className={styles.BIGflexbox}>
+        <div className={styles.SMALLflexbox1}>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+          <div className={styles.MINIflexboxEvent}>
+            <h3 className={styles.EventComponent}>Whats happening?</h3>
+          </div>
+        </div>
+
+        <div className={styles.SMALLflexbox2}>
+          <div className={styles.MINIflexboxTeam}>
+            <img
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              className={styles.TeamComponent}
+              alt="team"
+            />
+          </div>
+          <div className={styles.MINIflexboxTeam}>
+            <img
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              className={styles.TeamComponent}
+              alt="team"
+            />
+          </div>
+          <div className={styles.MINIflexboxTeam}>
+            <img
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              className={styles.TeamComponent}
+              alt="team"
+            />
+          </div>
+          <div className={styles.MINIflexboxTeam}>
+            <img
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              className={styles.TeamComponent}
+              alt="team"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.buttonContainer}>
+        <Button
+          label="Logout"
+          className={`btn-purple-outline ${styles.logout}`}
+          onClick={() => dispatch(actions.logout())}
+        />
       </div>
     </div>
   )
