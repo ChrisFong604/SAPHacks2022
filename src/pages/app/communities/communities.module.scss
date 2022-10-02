@@ -2,6 +2,13 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-left: 235px;
 }
 
 .cardgrid {
@@ -14,4 +21,56 @@
 .cardright {
   display: grid;
   text-align: right;
+}
+
+.box {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08), 0px 1px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  background: #FFFFFF;
+  width: 300px;
+  height: 330px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #263238;
+  padding: 24px;
+}
+
+.location {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #263238;
+  padding: 8px;
+  margin-left: 16px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #263238;
+  margin-bottom: 16px;
+  margin-left: 24px;
+  margin-right: 16px;
+}
+
+.internal {
+  padding-top: 45px;
+  padding-left: 24px;
+  position: absolute;
+}
+
+.internalText {
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #263238;
+  border-radius: 8px;
 }
