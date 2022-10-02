@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap'
-import { images } from 'theme'
+// import { images } from 'theme'
 
 function NavBar(args) {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,9 +26,8 @@ function NavBar(args) {
           <img
             alt="nav logo"
             style={{ height: 75, marginBottom: '25px' }}
-            src={images.cosync}
+            src='https://cdn.discordapp.com/attachments/1025178974290194492/1026145251385147432/unknown.png'
           />
-          CoSync
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
