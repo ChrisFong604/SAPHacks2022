@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  background: $gradient-pink-purple;
   justify-content: center;
   align-items: center;
+  background: url(https://media.discordapp.net/attachments/1025178974290194492/1026051243589783593/upscaled_bgnd.jpg?width=1014&height=676);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @include tablet-or-less {
     flex-direction: column;
   }
@@ -26,12 +29,15 @@
 .leftContainer {
   flex: 1;
   flex-direction: column;
-  padding: rem(60);
+  margin-left: rem(70);
+  margin-right: rem(20);
   z-index: 2;
+
   @include tablet-or-less {
     width: 100%;
     padding: rem(32) rem(16);
   }
+
   @include breakpoint-down(1120) {
     padding: rem(32) rem(16);
     flex: 3;
@@ -40,10 +46,12 @@
 
 .rightContainer {
   @extend .leftContainer;
+
   @include tablet-or-less {
     width: 100%;
     padding: 0 rem(24) rem(24);
   }
+
   @include breakpoint-down(1120) {
     padding: rem(24);
     flex: 5;
@@ -52,20 +60,21 @@
 
 .logo {
   display: block;
-  width: rem(160);
+  width: rem(600);
   margin-bottom: rem(16);
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+
   @include tablet-or-less {
     width: rem(120);
   }
 }
 
 .header {
-  font-size: rem(40);
+  font-size: rem(35);
   color: white !important;
-  text-align: center;
-  margin-bottom: rem(60);
+  text-align: left;
+  margin-bottom: rem(15);
+
   @include tablet-or-less {
     font-size: rem(32);
     margin-bottom: rem(16);
@@ -84,7 +93,7 @@
 .description {
   font-size: rem(16);
   line-height: rem(19);
-  text-align: center;
+  text-align: left;
   color: white;
   margin-bottom: rem(48);
 }
