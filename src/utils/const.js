@@ -5,4 +5,7 @@ export const path = {
   resetPassword: '/reset-password',
   confirmEmail: '/confirm-email',
   dashboard: '/dashboard',
+  workspaces: '/workspaces',
+  communities: '/communities',
+  events: '/events',
 }
