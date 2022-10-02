@@ -11,8 +11,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from 'reactstrap'
+import { images } from 'theme'
 
 function NavBar(args) {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,32 +21,42 @@ function NavBar(args) {
 
   return (
     <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar style={{ textDecoration: 'none' }} {...args}>
+        <NavbarBrand href="/">
+          <img
+            alt="nav logo"
+            style={{ height: 75, marginBottom: '25px' }}
+            src={images.cosync}
+          />
+          CoSync
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/Workspaces/">Workspaces</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
+              <NavLink href="/Workspaces/">Teams</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
+            <NavItem>
+              <NavLink href="/Workspaces/">Communities</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/Workspaces/">Events</NavLink>
+            </NavItem>
+            <UncontrolledDropdown right nav inNavbar>
               <DropdownToggle nav caret>
                 Options
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem>Profile Settings</DropdownItem>
+                <DropdownItem>Manage Events</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>Reset</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>

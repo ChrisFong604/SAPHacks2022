@@ -6,8 +6,9 @@ import { path } from 'utils/const'
 // import styles from './app.module.scss'
 
 const App = () => (
-  <>
-    <NavBar />
+  <div>
+    <NavBar top fluid light full expand />
+
     <Switch>
       <Route path={path.dashboard}>
         <Dashboard />
@@ -26,7 +27,7 @@ const App = () => (
       </Route>
       <Redirect to={path.dashboard} />
     </Switch>
-  </>
+  </div>
 )
 
 export default App

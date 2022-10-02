@@ -1,0 +1,17 @@
+.maingrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.cardgrid {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 2;
+}
+
+.cardright {
+  display: grid;
+  text-align: right;
+}
