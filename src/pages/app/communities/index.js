@@ -44,19 +44,16 @@ const HorizontalCard = ({ community }) => (
     <div className={styles.name}>{community.name}</div>
     <div className={styles.description}>{community.description}</div>
     <div className={styles.location}>{community.location}</div>
-    {/* <div className={styles.internal}>
-      <div className={styles.internalText}>Learn More</div>
-    </div> */}
   </div>
 )
 
 export default function Communities() {
   return (
     <div>
-      <div>Communities page</div>
+      <div className={styles.title}>Communities page</div>
       <img
         alt="search bar"
-        style={{ height: 75, marginLeft: '220px', marginBottom: '36px' }}
+        style={{ height: 75, marginLeft: '290px', marginBottom: '36px' }}
         src="https://cdn.discordapp.com/attachments/1025178974290194492/1026213068885209179/unknown.png"
       />
       <div className={styles.maingrid}>

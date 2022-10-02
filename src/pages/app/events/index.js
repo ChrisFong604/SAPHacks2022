@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './events.module.scss'
 
 const upcomingEvents = [
   { name: 'Board games night', date: 'Oct 6, 7:00p.m - 9:00p.m' },
@@ -13,17 +14,22 @@ const upcomingEvents = [
 ]
 
 const HorizontalCard = ({ event }) => (
-  <div>
-    <div>{event.name}</div>
-    <div>{event.date}</div>
+  <div className={styles.box}>
+    <div className={styles.name}>{event.name}</div>
+    <div className={styles.date}>{event.date}</div>
   </div>
 )
 
 export default function Events() {
   return (
     <div>
-      Events Page
-      <div>
+      <div className={styles.title}>Events page</div>
+      <img
+        alt="search bar"
+        style={{ height: 75, marginLeft: '290px', marginBottom: '36px' }}
+        src="https://cdn.discordapp.com/attachments/1025178974290194492/1026213068885209179/unknown.png"
+      />
+      <div className={styles.maingrid}>
         {upcomingEvents.map((event) => (
           <HorizontalCard key={event.date} event={event} />
         ))}
