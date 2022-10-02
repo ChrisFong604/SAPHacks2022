@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { images } from 'theme'
+// import { images } from 'theme'
 import { path } from 'utils/const'
 import Login from './Login'
 import Signup from './Signup'
@@ -10,15 +10,17 @@ import styles from './auth.module.scss'
 const Auth = () => (
   <div className={styles.root}>
     <div className={styles.leftContainer}>
-      <img src={images.logo} className={styles.logo} alt="logo" />
-      <h1 className={styles.header}>👋 React Firebase Boilerplate</h1>
-      <p className={styles.title}>What’s includes?</p>
+      <img
+        src="https://media.discordapp.net/attachments/1025178974290194492/1026030057371750451/logo.png"
+        className={styles.logo}
+        alt="logo"
+      />
+      <h1 className={styles.header}>
+        Coordinate with your coworkers for working and socializing in-office
+      </h1>
       <p className={styles.description}>
-        Firebase Authentication | Firebase Hosting | Firestore | Firebase
-        Storage | Storybook | Prettier | Eslint | Jest | Bundle Analizer | Redux
-        | React Router Dom ...and more!
+        Schedule your time • Socialize with teammates • Have fun while working
       </p>
-      <p className={styles.prompt}>Try it and check how it works 👉</p>
     </div>
     <div className={styles.rightContainer}>
       <Switch>
