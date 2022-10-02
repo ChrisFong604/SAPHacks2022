@@ -7,5 +7,6 @@ export const path = {
   dashboard: '/dashboard',
   workspaces: '/workspaces',
   communities: '/communities',
+  teams: '/teams',
   events: '/events',
 }
