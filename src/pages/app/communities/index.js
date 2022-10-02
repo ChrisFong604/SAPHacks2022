@@ -1,8 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import styles from './communities.module.scss'
 
 export default function Communities() {
-  const dispatch = useDispatch()
   const { data } = useSelector((state) => state.app)
 
   return (
