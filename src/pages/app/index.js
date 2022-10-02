@@ -1,5 +1,5 @@
 import NavBar from 'components/NavBar'
-import Dashboard from 'pages/dashboard'
+import Dashboard from 'pages/app/dashboard'
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { path } from 'utils/const'
