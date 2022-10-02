@@ -65,7 +65,7 @@ export const authenticate = () => (dispatch) => {
 }
 
 const signup =
-  ({ name, email, password }) =>
+  ({ name, email, office, password }) =>
   () =>
     new Promise(async (resolve, reject) => {
       try {
@@ -82,6 +82,7 @@ const signup =
         await firestore.collection('users').doc(user.uid).set({
           name,
           email,
+          office,
         })
 
         resolve(user)

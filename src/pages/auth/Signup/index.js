@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import Selector from 'components/Select/Select'
 import Input from 'components/Input'
 import Button from 'components/Button'
 import ErrorBox from 'components/ErrorBox'
@@ -28,6 +29,7 @@ const Signup = () => {
   const [input, setInput] = useState({
     name: '',
     email: '',
+    office: '',
     password: '',
     confirmPassword: '',
   })
@@ -63,6 +65,9 @@ const Signup = () => {
     // signup action
     setLoading(true)
 
+    // set office to name
+    input.office = input.office.value
+
     try {
       await dispatch(actions.signup(input))
       setOpen(true)
@@ -86,6 +91,25 @@ const Signup = () => {
         onChange={handleOnChange}
         error={error.name}
       />
+      <Selector
+        label="Office Location"
+        name="office"
+        placeholder="select main office"
+        options={[
+          {
+            value: 'Yaletown, Vancouver, Canada',
+            label: 'Yaletown, Vancouver, Canada',
+          },
+          { value: 'Britz, Berlin, Germany', label: 'Britz, Berlin, Germany' },
+          {
+            value: 'Sendai District, Tokyo, Japan',
+            label: 'Sendai District, Tokyo, Japan',
+          },
+        ]}
+        value={input.office}
+        onChange={handleOnChange}
+        error={error.office}
+      />
       <Input
         label="Email"
         name="email"
@@ -98,7 +122,7 @@ const Signup = () => {
         type="password"
         label="Password"
         name="password"
-        placeholder="password1234"
+        placeholder="make it good"
         value={input.password}
         onChange={handleOnChange}
         error={error.password}
