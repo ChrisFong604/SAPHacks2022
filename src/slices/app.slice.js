@@ -84,6 +84,27 @@ export const authenticate = () => (dispatch) => {
     })
   } */
 
+/* const createEvent =
+  ({ event_name, event_time, event_description }) =>
+  () => {
+    new Promise(async (resolve, reject) => {
+      try {
+        const attendees = []
+
+        const community = await firestore.collection('attendees').doc().set({
+          event_name,
+          event_time,
+          event_description,
+          attendees,
+        })
+
+        resolve(community)
+      } catch (err) {
+        reject(err)
+      }
+    })
+  } */
+
 const signup =
   ({ name, email, office, password }) =>
   () =>
