@@ -23,22 +23,76 @@ const Dashboard = () => {
       <div className={styles.BIGflexbox}>
         <div className={styles.SMALLflexbox1}>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <body className={styles.EventComponent1}>Code with Cats</body>
+            <img
+              src="https://media.discordapp.net/attachments/1025178616952266814/1026140125828231259/Image.png"
+              className={styles.EventComponent4}
+              alt="team"
+            />
+            <h3 className={styles.EventComponent2}>
+              You get to code with cats around you!
+            </h3>
+            <h3 className={styles.EventComponent3}>Today in 10min</h3>
           </div>
         </div>
 
