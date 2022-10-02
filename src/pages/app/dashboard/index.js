@@ -1,14 +1,16 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import Button from 'components/Button'
-import { actions } from 'slices/app.slice'
+import { useSelector } from 'react-redux'
 import styles from './dashboard.module.scss'
 
 const Dashboard = () => {
-  const dispatch = useDispatch()
   const { me } = useSelector((state) => state.app)
   return (
     <div className={styles.root}>
+      <img
+        src="https://cdn.discordapp.com/attachments/1025178974290194492/1026154223253074011/Group_5.png"
+        className={styles.ImSoDoneWithItNavBar}
+        alt="team"
+      />
       <h2 className={styles.greeting}>{`Hey👋 ${me?.name || 'User\n'}!`}</h2>
 
       <div className={styles.flexboxContainer}>
@@ -99,41 +101,33 @@ const Dashboard = () => {
         <div className={styles.SMALLflexbox2}>
           <div className={styles.MINIflexboxTeam}>
             <img
-              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026159884074483873/unknown.png"
               className={styles.TeamComponent}
               alt="team"
             />
           </div>
           <div className={styles.MINIflexboxTeam}>
             <img
-              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026159884074483873/unknown.png"
               className={styles.TeamComponent}
               alt="team"
             />
           </div>
           <div className={styles.MINIflexboxTeam}>
             <img
-              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026159884074483873/unknown.png"
               className={styles.TeamComponent}
               alt="team"
             />
           </div>
           <div className={styles.MINIflexboxTeam}>
             <img
-              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026087737448747129/Screenshot_4.png"
+              src="https://cdn.discordapp.com/attachments/1025178974290194492/1026159884074483873/unknown.png"
               className={styles.TeamComponent}
               alt="team"
             />
           </div>
         </div>
-      </div>
-
-      <div className={styles.buttonContainer}>
-        <Button
-          label="Logout"
-          className={`btn-purple-outline ${styles.logout}`}
-          onClick={() => dispatch(actions.logout())}
-        />
       </div>
     </div>
   )
