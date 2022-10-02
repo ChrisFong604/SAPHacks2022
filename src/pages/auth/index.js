@@ -11,7 +11,7 @@ const Auth = () => (
   <div className={styles.root}>
     <div className={styles.leftContainer}>
       <img
-        src="https://media.discordapp.net/attachments/1025178974290194492/1026030057371750451/logo.png"
+        src="https://cdn.discordapp.com/attachments/1025178974290194492/1026051776840994826/unknown.png"
         className={styles.logo}
         alt="logo"
       />
