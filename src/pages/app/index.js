@@ -1,14 +1,17 @@
 import NavBar from 'components/NavBar'
+import Dashboard from 'pages/dashboard'
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
-import { images } from 'theme'
 import { path } from 'utils/const'
-import styles from './app.module.scss'
+// import styles from './app.module.scss'
 
 const App = () => (
   <>
     <NavBar />
     <Switch>
+      <Route path={path.dashboard}>
+        <Dashboard />
+      </Route>
       <Route path={path.workspaces}>
         <p>workspaces</p>
       </Route>
@@ -21,7 +24,7 @@ const App = () => (
       <Route path={path.teams}>
         <p>teams</p>
       </Route>
-      <Redirect to={path.login} />
+      <Redirect to={path.dashboard} />
     </Switch>
   </>
 )
