@@ -1,4 +1,4 @@
-@import '../../theme/core.scss';
+@import '../theme/core.scss';
 
 .root {
   flex: 1;
@@ -55,11 +55,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  max-height: 580px;
 }
 
 .MINIflexboxEvent {
   margin-left: 70px;
-  margin-right: 60px;
   margin-bottom: 30px;
 }
 
@@ -70,23 +70,23 @@
   border-radius: 4px;
   width: 360px;
   height: 128px;
+
 }
 
 .SMALLflexbox2 {
-  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  margin-right: 370px;
 }
 
 .MINIflexboxTeam {
-  margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: 50px;
+  flex-basis: 50%;
 }
 
 .TeamComponent {
-  margin: 10px;
+  min-width: none;
 }
 
 .buttonContainer {
