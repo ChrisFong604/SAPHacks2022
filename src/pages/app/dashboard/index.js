@@ -13,32 +13,32 @@ const Dashboard = () => {
 
       <div className={styles.flexboxContainer}>
         <div className={styles.flexboxItem1}>
-          <h3 className={styles.introL}>Whats happening?</h3>
+          <h4 className={styles.introL}>Whats happening?</h4>
         </div>
         <div className={styles.flexboxItem2}>
-          <h3 className={styles.introR}>Whos in?</h3>
+          <h4 className={styles.introR}>Whos in?</h4>
         </div>
       </div>
 
       <div className={styles.BIGflexbox}>
         <div className={styles.SMALLflexbox1}>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
           <div className={styles.MINIflexboxEvent}>
-            <h3 className={styles.EventComponent}>Whats happening?</h3>
+            <h4 className={styles.EventComponent}>Whats happening?</h4>
           </div>
         </div>
 

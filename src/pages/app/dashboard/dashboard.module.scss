@@ -3,7 +3,7 @@
 .root {
   flex: 1;
   background-color: #ffff;
-  height: '100vh';
+  height: 100vh;
 }
 
 .greeting {
@@ -48,7 +48,8 @@
 
 .BIGflexbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  margin-left: 20px;
 }
 
 .SMALLflexbox1 {
@@ -58,9 +59,9 @@
 }
 
 .MINIflexboxEvent {
-  margin-left: 70px;
-  margin-right: 60px;
-  margin-bottom: 30px;
+  max-width: 400px;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .EventComponent {
@@ -80,9 +81,9 @@
 }
 
 .MINIflexboxTeam {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 .TeamComponent {
